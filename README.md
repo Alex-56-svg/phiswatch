@@ -4,11 +4,14 @@ Interface de veille phishing et ingénierie sociale.
 
 ## Déploiement Cloudflare Workers
 
-Le dossier `public/` contient le site statique. Connecter ce dépôt à Cloudflare Workers Builds avec :
+Le dossier `public/` contient le site statique. Le Worker configuré est `silent-voice-f482`.
+
+Paramètres Cloudflare Workers Builds :
 
 - branche : `main`
 - commande de build : aucune
 - commande de déploiement : `npx wrangler deploy`
-- fichier de configuration : `wrangler.jsonc`
+- configuration : `wrangler.jsonc`
+- actifs statiques : `./public`
 
-Remplacer `NOM_EXACT_DE_TON_WORKER` dans `wrangler.jsonc` par le nom exact du Worker Cloudflare.
+La revue H1 met à jour `public/app.js` sur GitHub. Un commit accepté par Cloudflare déclenche ensuite le déploiement du Worker.
