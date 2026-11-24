@@ -4,7 +4,7 @@ Interface de veille phishing et ingénierie sociale.
 
 ## Déploiement Cloudflare Workers
 
-Le dossier `public/` contient le site statique. Le Worker configuré est `silent-voice-f482`.
+Le dossier `public/` contient le site statique. Le Worker configuré est `veillephis-alex`.
 
 Paramètres Cloudflare Workers Builds :
 
