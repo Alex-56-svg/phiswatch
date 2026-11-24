@@ -1,0 +1,7 @@
+{
+  "name": "NOM_EXACT_DE_TON_WORKER",
+  "compatibility_date": "2026-11-24",
+  "assets": {
+    "directory": "./public"
+  }
+}
